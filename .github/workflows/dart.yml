@@ -13,10 +13,11 @@ jobs:
         distribution: 'zulu'
         java-version: '17'
         
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      yaml    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
+    -      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.0'
+
       with:
         flutter-version: '3.13.0' # Menentukan versi Flutter yang cocok dengan proyek Anda
     - name: Build APK
