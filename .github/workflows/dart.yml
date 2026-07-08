@@ -15,12 +15,10 @@ jobs:
         
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
+      yaml    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.0'
-        
-    - name: Get dependencies
-      run: flutter pub get
-      
+        flutter-version: '3.13.0' # Menentukan versi Flutter yang cocok dengan proyek Anda
     - name: Build APK
       run: flutter build apk --release
       
