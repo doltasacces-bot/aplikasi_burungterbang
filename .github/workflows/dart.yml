@@ -18,7 +18,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.44.5'
-1
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -30,3 +30,4 @@ jobs:
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          
